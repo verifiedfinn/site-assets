@@ -17,12 +17,12 @@
     /* Hotspot: x y — adjust to match your image's tip point
        pointer: 12 2 = typical arrow tip
        text:     4 9 = typical I-beam centre                  */
-    var cursors = {
-      default:    "url('" + BASE + "default."     + ext + "') 0 0, auto",
-      pointer:    "url('" + BASE + "pointer."     + ext + "') 12 2, pointer",
-      text:       "url('" + BASE + "text."        + ext + "') 4 9, text",
-      notAllowed: "url('" + BASE + "not-allowed." + ext + "') 0 0, not-allowed"
-    };
+var cursors = {
+  default:    "url('" + BASE + "cursor_normal."   + ext + "') 0 0, auto",
+  pointer:    "url('" + BASE + "cursor_link."     + ext + "') 12 2, pointer",
+  text:       "url('" + BASE + "cursor_text."     + ext + "') 4 9, text",
+  notAllowed: "url('" + BASE + "cursor_unavail."  + ext + "') 0 0, not-allowed"
+};
 
     /* Base cursor on everything */
     document.documentElement.style.cursor = cursors.default;
